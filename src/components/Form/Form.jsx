@@ -56,33 +56,39 @@ const Form = () => {
     }
 
     return(
-        <form className={css.user_form} onSubmit={handleSubmit}>
-            <label className={css.user_form_label}>
-                Name:
-                <input
-                    className={css.user_form_input}
-                    type="text"
-                    name="name"
-                    pattern="^[A-Za-z\u0080-\uFFFF ']+$"
-                    title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-                    required
-                    value={name}
-                    onChange={handleChangeName}
-                />
-            </label>
-            <label className={css.user_form_label}>
-                Phone:
-                <input
-                    className={css.user_form_input}
-                    type="tel"
-                    name="number"
-                    pattern="^(\+?[0-9.\(\)\-\s]*)$"
-                    title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-                    required
-                    value={number}
-                    onChange={handleChangeNumber}
-                />
-            </label>
+        <form onSubmit={handleSubmit}>
+            <ul className={css.user_form}>
+                <li className={css.form_item}>
+                    <label className={css.user_form_label}>
+                        Name:
+                        <input
+                            className={css.user_form_input}
+                            type="text"
+                            name="name"
+                            pattern="^[A-Za-z\u0080-\uFFFF ']+$"
+                            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+                            required
+                            placeholder='Your name'
+                            onChange={handleChangeName}
+                        />
+                    </label>
+                </li>
+                <li>
+                    <label className={css.user_form_label}>
+                        Phone:
+                        <input
+                            className={css.user_form_input}
+                            type="tel"
+                            name="number"
+                            pattern="^(\+?[0-9.\(\)\-\s]*)$"
+                            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+                            required
+                            placeholder='Phone number'
+                            onChange={handleChangeNumber}
+                        />
+                    </label>
+                </li>
+            </ul>
 
             <button className={css.user_form_button} type="submit">Add Contact</button>
         </form>

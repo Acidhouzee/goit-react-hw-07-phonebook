@@ -9,4 +9,17 @@
 
 .feedback_options_li_button {
     margin-left: 10px;
+    padding: 8px 15px;
+    max-width: 150px;
+    color: #fff;
+    background-color: #283655;
+    border: 1px solid #283655;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+}
+
+.feedback_options_li_button:hover,
+.feedback_options_li_button:focus {
+    background-color: #1E1F26;
+    border: 1px solid #1E1F26;
 }

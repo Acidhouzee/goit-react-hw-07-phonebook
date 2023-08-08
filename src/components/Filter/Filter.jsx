@@ -1,12 +1,11 @@
 import React from "react";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { filterContacts } from "redux/filterSlice";
-import { filteredContacts } from "redux/selectors";
+import css from '../Filter/Filter.module.css'
 
 const Filter = () => {
 
     const dispatch = useDispatch();
-    const filter = useSelector(filteredContacts);
 
     const filterName = event => {
         const value  = event.target.value.toLowerCase();
@@ -17,10 +16,11 @@ const Filter = () => {
         <div className="contacts-filter">
             <h3>Find contacts by name:</h3>
             <input
+                className={css.filter_input}
                 type="text"
                 name="name"
                 pattern="^[A-Za-z\u0080-\uFFFF ']+$"
-                value={filter}
+                placeholder='Filter name'
                 onChange={filterName}
             />
         </div>  
