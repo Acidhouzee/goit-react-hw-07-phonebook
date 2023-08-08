@@ -1,9 +1,13 @@
 .form_wrapper {
   position: relative;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(210, 226, 249, 0.6);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-  }
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(210, 226, 249, 0.6);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-image: url(/assets/bg.png);
+  background-position: initial;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

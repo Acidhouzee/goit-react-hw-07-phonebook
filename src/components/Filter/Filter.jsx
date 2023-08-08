@@ -13,7 +13,7 @@ const Filter = () => {
     };
     
     return (
-        <div className="contacts-filter">
+        <div className={css.contacts_filter}>
             <h3>Find contacts by name:</h3>
             <input
                 className={css.filter_input}
