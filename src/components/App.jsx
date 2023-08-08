@@ -6,6 +6,7 @@ import Contacts from 'components/Contacts/Contacts';
 import Filter from 'components/Filter/Filter';
 import css from "./App.module.css";
 import { selectError, selectIsLoading } from "redux/selectors";
+import Loader from "./Loader/Loader";
 
 
 export function UserForm() {
@@ -23,8 +24,8 @@ export function UserForm() {
           <Form/>           
           <h2>Contacts</h2>
           <Filter/>
+          {isLoading && !error &&  <Loader/>}  
           <Contacts/>
-          {isLoading && !error &&  <b>Request in progress...</b>}  
       </div>
   ); 
 };
