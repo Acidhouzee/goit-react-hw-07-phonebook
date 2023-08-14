@@ -1,8 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import css from '../Contacts/Contacts.module.css';
 import { deleteContact } from "redux/operations";
 import { selectFilteredContacts } from "redux/selectors";
+import { Button } from "@mui/material";
+import css from '../Contacts/Contacts.module.css';
 
 const Contacts = () => {
 
@@ -20,7 +21,7 @@ const Contacts = () => {
                 {contacts.map(contact => (
                     <li className={css.feedback_options_li} key={contact.id}>
                         {contact.name}: {contact.number}
-                        <button className={css.feedback_options_li_button} type="button" onClick={() => handleDeleteContact(contact.id)}>Delete</button>
+                        <Button variant="contained" size="small" type="button" onClick={() => handleDeleteContact(contact.id)}>Delete</Button>
                     </li>
                 ))}
             </ul>

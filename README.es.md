@@ -72,7 +72,7 @@ la ventana desplegable del enlace `Detalles`.
 Después de un tiempo, normalmente un par de minutos, la página real se puede ver
 en la dirección especificada en la propiedad `homepage`. Por ejemplo, aquí está
 el enlace a la versión activa de este repositorio
-[https://goitacademy.github.io/goit-react-hw-07-phonebook](https://goitacademy.github.io/goit-react-hw-07-phonebook).
+[https://goitacademy.github.io/goit-react-hw-08-phonebook](https://goitacademy.github.io/goit-react-hw-08-phonebook).
 
 Si se abre una página en blanco, asegúrate de que no haya errores en la pestaña
 `Console` relacionados con rutas incorrectas de archivos CSS y JS del proyecto

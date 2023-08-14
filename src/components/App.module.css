@@ -1,13 +1,43 @@
-.form_wrapper {
+.header {
+  padding: 20px 30px;
+}
+
+.menu_list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu_item {
   position: relative;
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(210, 226, 249, 0.6);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  background-image: url(/assets/bg.png);
-  background-position: initial;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #283655;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.menu_item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #283655;
+  transition: 0.3s all ease;
+}
+
+.menu_item.active::after {
+  width: 100%;
+}
+
+.menu_item:hover::after,
+.menu_item:focus::after {
+    width: 100%;
 }
