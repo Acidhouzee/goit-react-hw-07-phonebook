@@ -71,7 +71,7 @@ icon, and in the drop-down window, follow the link `Details`.
 After some time, usually a couple of minutes, the live page can be viewed at the
 address specified in the edited `homepage` property. For example, here is a link
 to a live version for this repository
-[https://goitacademy.github.io/goit-react-hw-08-phonebook](https://goitacademy.github.io/goit-react-hw-08-phonebook).
+[https://goitacademy.github.io/goit-react-hw-07-phonebook](https://goitacademy.github.io/goit-react-hw-07-phonebook).
 
 If a blank page opens, make sure there are no errors in the `Console` tab
 related to incorrect paths to the CSS and JS files of the project (**404**). You

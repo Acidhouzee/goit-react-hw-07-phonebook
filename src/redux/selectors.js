@@ -5,12 +5,6 @@ export const filteredContacts = state => state.filter;
 export const selectIsLoading = state => state.contacts.isLoading;
 export const selectError = state => state.contacts.error;
 
-export const selectUserLoading = state => state.auth.isLoading;
-export const selectUserError = state => state.auth.error;
-export const selectUserToken = state => state.auth.token;
-export const selectUserUserData = state => state.auth.userData;
-export const selectAuthentificated = state => state.auth.authentificated;
-
 export const selectFilteredContacts = createSelector(
     [getContacts, filteredContacts],
     (contacts, filter) => {

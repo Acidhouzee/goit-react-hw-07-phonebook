@@ -84,7 +84,7 @@ Po jakimś czasie, zazwyczaj kilku minut, zdeployowaną stronę będzie można
 zobaczyć pod adresem wskazanym w zredagowanej właściwości `homepage`. Tutaj na
 przykład znajduje się odnośnik do zdeployowanej strony w wersji dla tego
 repozytorium
-[https://goitacademy.github.io/goit-react-hw-08-phonebook](https://goitacademy.github.io/goit-react-hw-08-phonebook).
+[https://goitacademy.github.io/goit-react-hw-07-phonebook](https://goitacademy.github.io/goit-react-hw-07-phonebook).
 
 Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma
 błędów związanych z nieprawidłowymi ścieżkami do plików CSS i JS projektu

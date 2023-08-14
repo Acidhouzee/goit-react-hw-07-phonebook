@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+import css from '../Form/Form.module.css';
 import { getContacts } from "redux/selectors";
 import { addContact } from "redux/operations";
-import { Button, TextField } from "@mui/material";
-import css from 'css/Main.module.css';
 
 
 const Form = () => {
@@ -57,42 +57,40 @@ const Form = () => {
 
     return(
         <form onSubmit={handleSubmit}>
-            <ul className={css.list}>
-                <li>
+            <ul className={css.user_form}>
+                <li className={css.form_item}>
                     <label className={css.user_form_label}>
-                        <TextField
-                            margin="normal"
-                            id="outlined-basic"
-                            label="Contact Name"
+                        Name:
+                        <input
+                            className={css.user_form_input}
                             type="text"
                             name="name"
                             pattern="^[A-Za-z\u0080-\uFFFF ']+$"
                             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                             required
-                            value={name}
+                            placeholder='Your name'
                             onChange={handleChangeName}
                         />
                     </label>
                 </li>
                 <li>
                     <label className={css.user_form_label}>
-                        <TextField
-                            margin="normal"
-                            id="outlined-basic"
-                            label="Phone number"
+                        Phone:
+                        <input
+                            className={css.user_form_input}
                             type="tel"
                             name="number"
                             pattern="^(\+?[0-9.\(\)\-\s]*)$"
                             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                             required
-                            value={number}
+                            placeholder='Phone number'
                             onChange={handleChangeNumber}
                         />
                     </label>
                 </li>
             </ul>
 
-            <Button variant="contained" sx={{ mt: 2 }} type="submit">Add Contact</Button>
+            <button className={css.user_form_button} type="submit">Add Contact</button>
         </form>
     );
 }

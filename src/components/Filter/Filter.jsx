@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from 'react-redux';
 import { filterContacts } from "redux/filterSlice";
-import { TextField } from "@mui/material";
+import css from '../Filter/Filter.module.css'
 
 const Filter = () => {
 
@@ -13,15 +13,14 @@ const Filter = () => {
     };
     
     return (
-        <div>
+        <div className={css.contacts_filter}>
             <h3>Find contacts by name:</h3>
-            <TextField
-                margin="normal"
-                id="outlined-basic"
-                label="Search Contacts..."
+            <input
+                className={css.filter_input}
                 type="text"
                 name="name"
                 pattern="^[A-Za-z\u0080-\uFFFF ']+$"
+                placeholder='Filter name'
                 onChange={filterName}
             />
         </div>  
